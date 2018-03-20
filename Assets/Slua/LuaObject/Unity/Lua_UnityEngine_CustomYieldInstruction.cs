@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_CustomYieldInstruction : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int MoveNext(IntPtr l) {
 		try {
@@ -17,7 +17,7 @@ public class Lua_UnityEngine_CustomYieldInstruction : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Reset(IntPtr l) {
 		try {
@@ -30,7 +30,7 @@ public class Lua_UnityEngine_CustomYieldInstruction : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_keepWaiting(IntPtr l) {
 		try {
@@ -43,7 +43,7 @@ public class Lua_UnityEngine_CustomYieldInstruction : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_Current(IntPtr l) {
 		try {

@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_Microphone : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int constructor(IntPtr l) {
 		try {
@@ -17,7 +17,7 @@ public class Lua_UnityEngine_Microphone : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Start_s(IntPtr l) {
 		try {
@@ -38,7 +38,7 @@ public class Lua_UnityEngine_Microphone : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int End_s(IntPtr l) {
 		try {
@@ -52,7 +52,7 @@ public class Lua_UnityEngine_Microphone : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int IsRecording_s(IntPtr l) {
 		try {
@@ -67,7 +67,7 @@ public class Lua_UnityEngine_Microphone : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetPosition_s(IntPtr l) {
 		try {
@@ -82,7 +82,7 @@ public class Lua_UnityEngine_Microphone : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetDeviceCaps_s(IntPtr l) {
 		try {
@@ -100,7 +100,7 @@ public class Lua_UnityEngine_Microphone : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_devices(IntPtr l) {
 		try {

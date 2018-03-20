@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_CanvasGroup : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int IsRaycastLocationValid(IntPtr l) {
 		try {
@@ -21,7 +21,7 @@ public class Lua_UnityEngine_CanvasGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_alpha(IntPtr l) {
 		try {
@@ -34,7 +34,7 @@ public class Lua_UnityEngine_CanvasGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_alpha(IntPtr l) {
 		try {
@@ -49,7 +49,7 @@ public class Lua_UnityEngine_CanvasGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_interactable(IntPtr l) {
 		try {
@@ -62,7 +62,7 @@ public class Lua_UnityEngine_CanvasGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_interactable(IntPtr l) {
 		try {
@@ -77,7 +77,7 @@ public class Lua_UnityEngine_CanvasGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_blocksRaycasts(IntPtr l) {
 		try {
@@ -90,7 +90,7 @@ public class Lua_UnityEngine_CanvasGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_blocksRaycasts(IntPtr l) {
 		try {
@@ -105,7 +105,7 @@ public class Lua_UnityEngine_CanvasGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_ignoreParentGroups(IntPtr l) {
 		try {
@@ -118,7 +118,7 @@ public class Lua_UnityEngine_CanvasGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_ignoreParentGroups(IntPtr l) {
 		try {

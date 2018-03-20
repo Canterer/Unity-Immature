@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_UI_HorizontalOrVerticalLayoutGroup : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_spacing(IntPtr l) {
 		try {
@@ -16,7 +16,7 @@ public class Lua_UnityEngine_UI_HorizontalOrVerticalLayoutGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_spacing(IntPtr l) {
 		try {
@@ -31,7 +31,7 @@ public class Lua_UnityEngine_UI_HorizontalOrVerticalLayoutGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_childForceExpandWidth(IntPtr l) {
 		try {
@@ -44,7 +44,7 @@ public class Lua_UnityEngine_UI_HorizontalOrVerticalLayoutGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_childForceExpandWidth(IntPtr l) {
 		try {
@@ -59,7 +59,7 @@ public class Lua_UnityEngine_UI_HorizontalOrVerticalLayoutGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_childForceExpandHeight(IntPtr l) {
 		try {
@@ -72,7 +72,7 @@ public class Lua_UnityEngine_UI_HorizontalOrVerticalLayoutGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_childForceExpandHeight(IntPtr l) {
 		try {
@@ -87,7 +87,7 @@ public class Lua_UnityEngine_UI_HorizontalOrVerticalLayoutGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_childControlWidth(IntPtr l) {
 		try {
@@ -100,7 +100,7 @@ public class Lua_UnityEngine_UI_HorizontalOrVerticalLayoutGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_childControlWidth(IntPtr l) {
 		try {
@@ -115,7 +115,7 @@ public class Lua_UnityEngine_UI_HorizontalOrVerticalLayoutGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_childControlHeight(IntPtr l) {
 		try {
@@ -128,7 +128,7 @@ public class Lua_UnityEngine_UI_HorizontalOrVerticalLayoutGroup : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_childControlHeight(IntPtr l) {
 		try {

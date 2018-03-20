@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int BakeMesh(IntPtr l) {
 		try {
@@ -18,7 +18,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetBlendShapeWeight(IntPtr l) {
 		try {
@@ -34,7 +34,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetBlendShapeWeight(IntPtr l) {
 		try {
@@ -51,7 +51,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_bones(IntPtr l) {
 		try {
@@ -64,7 +64,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_bones(IntPtr l) {
 		try {
@@ -79,7 +79,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_rootBone(IntPtr l) {
 		try {
@@ -92,7 +92,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_rootBone(IntPtr l) {
 		try {
@@ -107,7 +107,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_quality(IntPtr l) {
 		try {
@@ -120,7 +120,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_quality(IntPtr l) {
 		try {
@@ -135,7 +135,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_sharedMesh(IntPtr l) {
 		try {
@@ -148,7 +148,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_sharedMesh(IntPtr l) {
 		try {
@@ -163,7 +163,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_updateWhenOffscreen(IntPtr l) {
 		try {
@@ -176,7 +176,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_updateWhenOffscreen(IntPtr l) {
 		try {
@@ -191,7 +191,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_skinnedMotionVectors(IntPtr l) {
 		try {
@@ -204,7 +204,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_skinnedMotionVectors(IntPtr l) {
 		try {
@@ -219,7 +219,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_localBounds(IntPtr l) {
 		try {
@@ -232,7 +232,7 @@ public class Lua_UnityEngine_SkinnedMeshRenderer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_localBounds(IntPtr l) {
 		try {

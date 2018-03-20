@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int constructor(IntPtr l) {
 		try {
@@ -17,7 +17,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Dispose(IntPtr l) {
 		try {
@@ -30,7 +30,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Release(IntPtr l) {
 		try {
@@ -43,7 +43,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Clear(IntPtr l) {
 		try {
@@ -56,7 +56,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int DrawMesh(IntPtr l) {
 		try {
@@ -129,7 +129,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int DrawRenderer(IntPtr l) {
 		try {
@@ -178,7 +178,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int DrawProcedural(IntPtr l) {
 		try {
@@ -245,7 +245,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int DrawProceduralIndirect(IntPtr l) {
 		try {
@@ -312,7 +312,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int DrawMeshInstanced(IntPtr l) {
 		try {
@@ -379,7 +379,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetRenderTarget(IntPtr l) {
 		try {
@@ -498,7 +498,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Blit(IntPtr l) {
 		try {
@@ -583,7 +583,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetTemporaryRT(IntPtr l) {
 		try {
@@ -698,7 +698,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int ReleaseTemporaryRT(IntPtr l) {
 		try {
@@ -713,7 +713,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int ClearRenderTarget(IntPtr l) {
 		try {
@@ -752,7 +752,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetGlobalFloat(IntPtr l) {
 		try {
@@ -785,7 +785,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetGlobalVector(IntPtr l) {
 		try {
@@ -818,7 +818,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetGlobalColor(IntPtr l) {
 		try {
@@ -851,7 +851,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetGlobalMatrix(IntPtr l) {
 		try {
@@ -884,7 +884,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetGlobalFloatArray(IntPtr l) {
 		try {
@@ -937,7 +937,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetGlobalVectorArray(IntPtr l) {
 		try {
@@ -990,7 +990,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetGlobalMatrixArray(IntPtr l) {
 		try {
@@ -1043,7 +1043,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetGlobalTexture(IntPtr l) {
 		try {
@@ -1076,7 +1076,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetGlobalBuffer(IntPtr l) {
 		try {
@@ -1109,7 +1109,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetShadowSamplingMode(IntPtr l) {
 		try {
@@ -1126,7 +1126,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int IssuePluginEvent(IntPtr l) {
 		try {
@@ -1143,7 +1143,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_name(IntPtr l) {
 		try {
@@ -1156,7 +1156,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_name(IntPtr l) {
 		try {
@@ -1171,7 +1171,7 @@ public class Lua_UnityEngine_Rendering_CommandBuffer : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_sizeInBytes(IntPtr l) {
 		try {

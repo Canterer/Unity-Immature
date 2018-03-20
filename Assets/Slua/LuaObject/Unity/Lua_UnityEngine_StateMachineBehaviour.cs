@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_StateMachineBehaviour : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int OnStateEnter(IntPtr l) {
 		try {
@@ -42,7 +42,7 @@ public class Lua_UnityEngine_StateMachineBehaviour : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int OnStateUpdate(IntPtr l) {
 		try {
@@ -81,7 +81,7 @@ public class Lua_UnityEngine_StateMachineBehaviour : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int OnStateExit(IntPtr l) {
 		try {
@@ -120,7 +120,7 @@ public class Lua_UnityEngine_StateMachineBehaviour : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int OnStateMove(IntPtr l) {
 		try {
@@ -159,7 +159,7 @@ public class Lua_UnityEngine_StateMachineBehaviour : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int OnStateIK(IntPtr l) {
 		try {
@@ -198,7 +198,7 @@ public class Lua_UnityEngine_StateMachineBehaviour : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int OnStateMachineEnter(IntPtr l) {
 		try {
@@ -233,7 +233,7 @@ public class Lua_UnityEngine_StateMachineBehaviour : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int OnStateMachineExit(IntPtr l) {
 		try {

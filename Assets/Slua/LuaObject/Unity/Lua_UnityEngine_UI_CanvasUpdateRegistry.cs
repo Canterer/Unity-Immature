@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_UI_CanvasUpdateRegistry : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int RegisterCanvasElementForLayoutRebuild_s(IntPtr l) {
 		try {
@@ -17,7 +17,7 @@ public class Lua_UnityEngine_UI_CanvasUpdateRegistry : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int TryRegisterCanvasElementForLayoutRebuild_s(IntPtr l) {
 		try {
@@ -32,7 +32,7 @@ public class Lua_UnityEngine_UI_CanvasUpdateRegistry : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int RegisterCanvasElementForGraphicRebuild_s(IntPtr l) {
 		try {
@@ -46,7 +46,7 @@ public class Lua_UnityEngine_UI_CanvasUpdateRegistry : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int TryRegisterCanvasElementForGraphicRebuild_s(IntPtr l) {
 		try {
@@ -61,7 +61,7 @@ public class Lua_UnityEngine_UI_CanvasUpdateRegistry : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int UnRegisterCanvasElementForRebuild_s(IntPtr l) {
 		try {
@@ -75,7 +75,7 @@ public class Lua_UnityEngine_UI_CanvasUpdateRegistry : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int IsRebuildingLayout_s(IntPtr l) {
 		try {
@@ -88,7 +88,7 @@ public class Lua_UnityEngine_UI_CanvasUpdateRegistry : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int IsRebuildingGraphics_s(IntPtr l) {
 		try {
@@ -101,7 +101,7 @@ public class Lua_UnityEngine_UI_CanvasUpdateRegistry : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_instance(IntPtr l) {
 		try {

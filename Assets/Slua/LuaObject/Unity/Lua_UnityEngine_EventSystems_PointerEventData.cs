@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int constructor(IntPtr l) {
 		try {
@@ -19,7 +19,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int IsPointerMoving(IntPtr l) {
 		try {
@@ -33,7 +33,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int IsScrolling(IntPtr l) {
 		try {
@@ -47,7 +47,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_hovered(IntPtr l) {
 		try {
@@ -60,7 +60,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_hovered(IntPtr l) {
 		try {
@@ -75,7 +75,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_pointerEnter(IntPtr l) {
 		try {
@@ -88,7 +88,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_pointerEnter(IntPtr l) {
 		try {
@@ -103,7 +103,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_lastPress(IntPtr l) {
 		try {
@@ -116,7 +116,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_rawPointerPress(IntPtr l) {
 		try {
@@ -129,7 +129,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_rawPointerPress(IntPtr l) {
 		try {
@@ -144,7 +144,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_pointerDrag(IntPtr l) {
 		try {
@@ -157,7 +157,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_pointerDrag(IntPtr l) {
 		try {
@@ -172,7 +172,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_pointerCurrentRaycast(IntPtr l) {
 		try {
@@ -185,7 +185,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_pointerCurrentRaycast(IntPtr l) {
 		try {
@@ -200,7 +200,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_pointerPressRaycast(IntPtr l) {
 		try {
@@ -213,7 +213,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_pointerPressRaycast(IntPtr l) {
 		try {
@@ -228,7 +228,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_eligibleForClick(IntPtr l) {
 		try {
@@ -241,7 +241,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_eligibleForClick(IntPtr l) {
 		try {
@@ -256,7 +256,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_pointerId(IntPtr l) {
 		try {
@@ -269,7 +269,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_pointerId(IntPtr l) {
 		try {
@@ -284,7 +284,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_position(IntPtr l) {
 		try {
@@ -297,7 +297,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_position(IntPtr l) {
 		try {
@@ -312,7 +312,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_delta(IntPtr l) {
 		try {
@@ -325,7 +325,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_delta(IntPtr l) {
 		try {
@@ -340,7 +340,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_pressPosition(IntPtr l) {
 		try {
@@ -353,7 +353,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_pressPosition(IntPtr l) {
 		try {
@@ -368,7 +368,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_clickTime(IntPtr l) {
 		try {
@@ -381,7 +381,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_clickTime(IntPtr l) {
 		try {
@@ -396,7 +396,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_clickCount(IntPtr l) {
 		try {
@@ -409,7 +409,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_clickCount(IntPtr l) {
 		try {
@@ -424,7 +424,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_scrollDelta(IntPtr l) {
 		try {
@@ -437,7 +437,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_scrollDelta(IntPtr l) {
 		try {
@@ -452,7 +452,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_useDragThreshold(IntPtr l) {
 		try {
@@ -465,7 +465,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_useDragThreshold(IntPtr l) {
 		try {
@@ -480,7 +480,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_dragging(IntPtr l) {
 		try {
@@ -493,7 +493,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_dragging(IntPtr l) {
 		try {
@@ -508,7 +508,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_button(IntPtr l) {
 		try {
@@ -521,7 +521,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_button(IntPtr l) {
 		try {
@@ -536,7 +536,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_enterEventCamera(IntPtr l) {
 		try {
@@ -549,7 +549,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_pressEventCamera(IntPtr l) {
 		try {
@@ -562,7 +562,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_pointerPress(IntPtr l) {
 		try {
@@ -575,7 +575,7 @@ public class Lua_UnityEngine_EventSystems_PointerEventData : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_pointerPress(IntPtr l) {
 		try {

@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_EventSystems_BaseInputModule : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Process(IntPtr l) {
 		try {
@@ -16,7 +16,7 @@ public class Lua_UnityEngine_EventSystems_BaseInputModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int IsPointerOverGameObject(IntPtr l) {
 		try {
@@ -32,7 +32,7 @@ public class Lua_UnityEngine_EventSystems_BaseInputModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int ShouldActivateModule(IntPtr l) {
 		try {
@@ -46,7 +46,7 @@ public class Lua_UnityEngine_EventSystems_BaseInputModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int DeactivateModule(IntPtr l) {
 		try {
@@ -59,7 +59,7 @@ public class Lua_UnityEngine_EventSystems_BaseInputModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int ActivateModule(IntPtr l) {
 		try {
@@ -72,7 +72,7 @@ public class Lua_UnityEngine_EventSystems_BaseInputModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int UpdateModule(IntPtr l) {
 		try {
@@ -85,7 +85,7 @@ public class Lua_UnityEngine_EventSystems_BaseInputModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int IsModuleSupported(IntPtr l) {
 		try {
@@ -99,7 +99,7 @@ public class Lua_UnityEngine_EventSystems_BaseInputModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_input(IntPtr l) {
 		try {

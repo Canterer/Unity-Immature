@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int constructor(IntPtr l) {
 		try {
@@ -17,7 +17,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_enabled(IntPtr l) {
 		try {
@@ -31,7 +31,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_enabled(IntPtr l) {
 		try {
@@ -48,7 +48,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_numTilesX(IntPtr l) {
 		try {
@@ -62,7 +62,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_numTilesX(IntPtr l) {
 		try {
@@ -79,7 +79,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_numTilesY(IntPtr l) {
 		try {
@@ -93,7 +93,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_numTilesY(IntPtr l) {
 		try {
@@ -110,7 +110,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_animation(IntPtr l) {
 		try {
@@ -124,7 +124,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_animation(IntPtr l) {
 		try {
@@ -141,7 +141,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_useRandomRow(IntPtr l) {
 		try {
@@ -155,7 +155,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_useRandomRow(IntPtr l) {
 		try {
@@ -172,7 +172,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_frameOverTime(IntPtr l) {
 		try {
@@ -186,7 +186,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_frameOverTime(IntPtr l) {
 		try {
@@ -203,7 +203,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_frameOverTimeMultiplier(IntPtr l) {
 		try {
@@ -217,7 +217,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_frameOverTimeMultiplier(IntPtr l) {
 		try {
@@ -234,7 +234,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startFrame(IntPtr l) {
 		try {
@@ -248,7 +248,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startFrame(IntPtr l) {
 		try {
@@ -265,7 +265,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startFrameMultiplier(IntPtr l) {
 		try {
@@ -279,7 +279,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startFrameMultiplier(IntPtr l) {
 		try {
@@ -296,7 +296,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_cycleCount(IntPtr l) {
 		try {
@@ -310,7 +310,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_cycleCount(IntPtr l) {
 		try {
@@ -327,7 +327,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_rowIndex(IntPtr l) {
 		try {
@@ -341,7 +341,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_rowIndex(IntPtr l) {
 		try {
@@ -358,7 +358,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_uvChannelMask(IntPtr l) {
 		try {
@@ -372,7 +372,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_uvChannelMask(IntPtr l) {
 		try {
@@ -389,7 +389,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_flipU(IntPtr l) {
 		try {
@@ -403,7 +403,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_flipU(IntPtr l) {
 		try {
@@ -420,7 +420,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_flipV(IntPtr l) {
 		try {
@@ -434,7 +434,7 @@ public class Lua_UnityEngine_ParticleSystem_TextureSheetAnimationModule : LuaObj
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_flipV(IntPtr l) {
 		try {

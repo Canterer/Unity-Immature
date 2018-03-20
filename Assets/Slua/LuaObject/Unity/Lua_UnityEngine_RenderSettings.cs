@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_RenderSettings : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int constructor(IntPtr l) {
 		try {
@@ -17,7 +17,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_fog(IntPtr l) {
 		try {
@@ -29,7 +29,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_fog(IntPtr l) {
 		try {
@@ -43,7 +43,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_fogMode(IntPtr l) {
 		try {
@@ -55,7 +55,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_fogMode(IntPtr l) {
 		try {
@@ -69,7 +69,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_fogColor(IntPtr l) {
 		try {
@@ -81,7 +81,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_fogColor(IntPtr l) {
 		try {
@@ -95,7 +95,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_fogDensity(IntPtr l) {
 		try {
@@ -107,7 +107,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_fogDensity(IntPtr l) {
 		try {
@@ -121,7 +121,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_fogStartDistance(IntPtr l) {
 		try {
@@ -133,7 +133,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_fogStartDistance(IntPtr l) {
 		try {
@@ -147,7 +147,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_fogEndDistance(IntPtr l) {
 		try {
@@ -159,7 +159,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_fogEndDistance(IntPtr l) {
 		try {
@@ -173,7 +173,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_ambientMode(IntPtr l) {
 		try {
@@ -185,7 +185,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_ambientMode(IntPtr l) {
 		try {
@@ -199,7 +199,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_ambientSkyColor(IntPtr l) {
 		try {
@@ -211,7 +211,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_ambientSkyColor(IntPtr l) {
 		try {
@@ -225,7 +225,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_ambientEquatorColor(IntPtr l) {
 		try {
@@ -237,7 +237,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_ambientEquatorColor(IntPtr l) {
 		try {
@@ -251,7 +251,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_ambientGroundColor(IntPtr l) {
 		try {
@@ -263,7 +263,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_ambientGroundColor(IntPtr l) {
 		try {
@@ -277,7 +277,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_ambientLight(IntPtr l) {
 		try {
@@ -289,7 +289,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_ambientLight(IntPtr l) {
 		try {
@@ -303,7 +303,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_ambientIntensity(IntPtr l) {
 		try {
@@ -315,7 +315,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_ambientIntensity(IntPtr l) {
 		try {
@@ -329,7 +329,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_ambientProbe(IntPtr l) {
 		try {
@@ -341,7 +341,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_ambientProbe(IntPtr l) {
 		try {
@@ -355,7 +355,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_reflectionIntensity(IntPtr l) {
 		try {
@@ -367,7 +367,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_reflectionIntensity(IntPtr l) {
 		try {
@@ -381,7 +381,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_reflectionBounces(IntPtr l) {
 		try {
@@ -393,7 +393,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_reflectionBounces(IntPtr l) {
 		try {
@@ -407,7 +407,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_haloStrength(IntPtr l) {
 		try {
@@ -419,7 +419,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_haloStrength(IntPtr l) {
 		try {
@@ -433,7 +433,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_flareStrength(IntPtr l) {
 		try {
@@ -445,7 +445,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_flareStrength(IntPtr l) {
 		try {
@@ -459,7 +459,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_flareFadeSpeed(IntPtr l) {
 		try {
@@ -471,7 +471,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_flareFadeSpeed(IntPtr l) {
 		try {
@@ -485,7 +485,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_skybox(IntPtr l) {
 		try {
@@ -497,7 +497,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_skybox(IntPtr l) {
 		try {
@@ -511,7 +511,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_sun(IntPtr l) {
 		try {
@@ -523,7 +523,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_sun(IntPtr l) {
 		try {
@@ -537,7 +537,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_defaultReflectionMode(IntPtr l) {
 		try {
@@ -549,7 +549,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_defaultReflectionMode(IntPtr l) {
 		try {
@@ -563,7 +563,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_defaultReflectionResolution(IntPtr l) {
 		try {
@@ -575,7 +575,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_defaultReflectionResolution(IntPtr l) {
 		try {
@@ -589,7 +589,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_customReflection(IntPtr l) {
 		try {
@@ -601,7 +601,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_customReflection(IntPtr l) {
 		try {
@@ -621,7 +621,7 @@ public class Lua_UnityEngine_RenderSettings : LuaObject {
 		addMember(l,"fog",get_fog,set_fog,false);
 		addMember(l,"fogMode",get_fogMode,set_fogMode,false);
 		addMember(l,"fogColor",get_fogColor,set_fogColor,false);
-		addMember(l,"fogDensity",get_fogDensity,SLua.RenderSettingsEx.set_fogDensity,false);
+		addMember(l,"fogDensity",get_fogDensity,set_fogDensity,false);
 		addMember(l,"fogStartDistance",get_fogStartDistance,set_fogStartDistance,false);
 		addMember(l,"fogEndDistance",get_fogEndDistance,set_fogEndDistance,false);
 		addMember(l,"ambientMode",get_ambientMode,set_ambientMode,false);

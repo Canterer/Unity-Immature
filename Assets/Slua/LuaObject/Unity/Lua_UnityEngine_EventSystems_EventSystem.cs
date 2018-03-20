@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int UpdateModules(IntPtr l) {
 		try {
@@ -16,7 +16,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetSelectedGameObject(IntPtr l) {
 		try {
@@ -47,7 +47,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int RaycastAll(IntPtr l) {
 		try {
@@ -64,7 +64,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int IsPointerOverGameObject(IntPtr l) {
 		try {
@@ -93,7 +93,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_current(IntPtr l) {
 		try {
@@ -105,7 +105,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_current(IntPtr l) {
 		try {
@@ -119,7 +119,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_sendNavigationEvents(IntPtr l) {
 		try {
@@ -132,7 +132,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_sendNavigationEvents(IntPtr l) {
 		try {
@@ -147,7 +147,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_pixelDragThreshold(IntPtr l) {
 		try {
@@ -160,7 +160,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_pixelDragThreshold(IntPtr l) {
 		try {
@@ -175,7 +175,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_currentInputModule(IntPtr l) {
 		try {
@@ -188,7 +188,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_firstSelectedGameObject(IntPtr l) {
 		try {
@@ -201,7 +201,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_firstSelectedGameObject(IntPtr l) {
 		try {
@@ -216,7 +216,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_currentSelectedGameObject(IntPtr l) {
 		try {
@@ -229,7 +229,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_alreadySelecting(IntPtr l) {
 		try {

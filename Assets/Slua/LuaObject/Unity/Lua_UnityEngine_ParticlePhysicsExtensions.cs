@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_ParticlePhysicsExtensions : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetSafeCollisionEventSize_s(IntPtr l) {
 		try {
@@ -18,7 +18,7 @@ public class Lua_UnityEngine_ParticlePhysicsExtensions : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetCollisionEvents_s(IntPtr l) {
 		try {
@@ -37,7 +37,7 @@ public class Lua_UnityEngine_ParticlePhysicsExtensions : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetSafeTriggerParticlesSize_s(IntPtr l) {
 		try {
@@ -54,7 +54,7 @@ public class Lua_UnityEngine_ParticlePhysicsExtensions : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetTriggerParticles_s(IntPtr l) {
 		try {
@@ -73,7 +73,7 @@ public class Lua_UnityEngine_ParticlePhysicsExtensions : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetTriggerParticles_s(IntPtr l) {
 		try {

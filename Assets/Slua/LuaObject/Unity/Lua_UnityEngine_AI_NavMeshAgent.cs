@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetDestination(IntPtr l) {
 		try {
@@ -19,7 +19,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int ActivateCurrentOffMeshLink(IntPtr l) {
 		try {
@@ -34,7 +34,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CompleteOffMeshLink(IntPtr l) {
 		try {
@@ -47,7 +47,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Warp(IntPtr l) {
 		try {
@@ -63,7 +63,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Move(IntPtr l) {
 		try {
@@ -78,7 +78,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Stop(IntPtr l) {
 		try {
@@ -91,7 +91,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Resume(IntPtr l) {
 		try {
@@ -104,7 +104,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int ResetPath(IntPtr l) {
 		try {
@@ -117,7 +117,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetPath(IntPtr l) {
 		try {
@@ -133,7 +133,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int FindClosestEdge(IntPtr l) {
 		try {
@@ -149,7 +149,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Raycast(IntPtr l) {
 		try {
@@ -167,7 +167,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CalculatePath(IntPtr l) {
 		try {
@@ -185,7 +185,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SamplePathPosition(IntPtr l) {
 		try {
@@ -205,7 +205,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetAreaCost(IntPtr l) {
 		try {
@@ -222,7 +222,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetAreaCost(IntPtr l) {
 		try {
@@ -238,7 +238,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_destination(IntPtr l) {
 		try {
@@ -251,7 +251,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_destination(IntPtr l) {
 		try {
@@ -266,7 +266,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_stoppingDistance(IntPtr l) {
 		try {
@@ -279,7 +279,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_stoppingDistance(IntPtr l) {
 		try {
@@ -294,7 +294,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_velocity(IntPtr l) {
 		try {
@@ -307,7 +307,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_velocity(IntPtr l) {
 		try {
@@ -322,7 +322,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_nextPosition(IntPtr l) {
 		try {
@@ -335,7 +335,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_nextPosition(IntPtr l) {
 		try {
@@ -350,7 +350,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_steeringTarget(IntPtr l) {
 		try {
@@ -363,7 +363,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_desiredVelocity(IntPtr l) {
 		try {
@@ -376,7 +376,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_remainingDistance(IntPtr l) {
 		try {
@@ -389,7 +389,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_baseOffset(IntPtr l) {
 		try {
@@ -402,7 +402,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_baseOffset(IntPtr l) {
 		try {
@@ -417,7 +417,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_isOnOffMeshLink(IntPtr l) {
 		try {
@@ -430,7 +430,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_currentOffMeshLinkData(IntPtr l) {
 		try {
@@ -443,7 +443,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_nextOffMeshLinkData(IntPtr l) {
 		try {
@@ -456,7 +456,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_autoTraverseOffMeshLink(IntPtr l) {
 		try {
@@ -469,7 +469,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_autoTraverseOffMeshLink(IntPtr l) {
 		try {
@@ -484,7 +484,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_autoBraking(IntPtr l) {
 		try {
@@ -497,7 +497,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_autoBraking(IntPtr l) {
 		try {
@@ -512,7 +512,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_autoRepath(IntPtr l) {
 		try {
@@ -525,7 +525,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_autoRepath(IntPtr l) {
 		try {
@@ -540,7 +540,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_hasPath(IntPtr l) {
 		try {
@@ -553,7 +553,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_pathPending(IntPtr l) {
 		try {
@@ -566,7 +566,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_isPathStale(IntPtr l) {
 		try {
@@ -579,7 +579,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_pathStatus(IntPtr l) {
 		try {
@@ -592,7 +592,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_pathEndPosition(IntPtr l) {
 		try {
@@ -605,7 +605,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_path(IntPtr l) {
 		try {
@@ -618,7 +618,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_path(IntPtr l) {
 		try {
@@ -633,7 +633,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_areaMask(IntPtr l) {
 		try {
@@ -646,7 +646,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_areaMask(IntPtr l) {
 		try {
@@ -661,7 +661,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_speed(IntPtr l) {
 		try {
@@ -674,7 +674,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_speed(IntPtr l) {
 		try {
@@ -689,7 +689,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_angularSpeed(IntPtr l) {
 		try {
@@ -702,7 +702,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_angularSpeed(IntPtr l) {
 		try {
@@ -717,7 +717,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_acceleration(IntPtr l) {
 		try {
@@ -730,7 +730,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_acceleration(IntPtr l) {
 		try {
@@ -745,7 +745,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_updatePosition(IntPtr l) {
 		try {
@@ -758,7 +758,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_updatePosition(IntPtr l) {
 		try {
@@ -773,7 +773,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_updateRotation(IntPtr l) {
 		try {
@@ -786,7 +786,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_updateRotation(IntPtr l) {
 		try {
@@ -801,7 +801,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_radius(IntPtr l) {
 		try {
@@ -814,7 +814,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_radius(IntPtr l) {
 		try {
@@ -829,7 +829,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_height(IntPtr l) {
 		try {
@@ -842,7 +842,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_height(IntPtr l) {
 		try {
@@ -857,7 +857,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_obstacleAvoidanceType(IntPtr l) {
 		try {
@@ -870,7 +870,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_obstacleAvoidanceType(IntPtr l) {
 		try {
@@ -885,7 +885,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_avoidancePriority(IntPtr l) {
 		try {
@@ -898,7 +898,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_avoidancePriority(IntPtr l) {
 		try {
@@ -913,7 +913,7 @@ public class Lua_UnityEngine_AI_NavMeshAgent : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_isOnNavMesh(IntPtr l) {
 		try {

@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Update(IntPtr l) {
 		try {
@@ -16,7 +16,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_boundsGlobal(IntPtr l) {
 		try {
@@ -29,7 +29,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_sizeCustom(IntPtr l) {
 		try {
@@ -42,7 +42,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_sizeCustom(IntPtr l) {
 		try {
@@ -57,7 +57,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_originCustom(IntPtr l) {
 		try {
@@ -70,7 +70,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_originCustom(IntPtr l) {
 		try {
@@ -85,7 +85,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_boundingBoxMode(IntPtr l) {
 		try {
@@ -98,7 +98,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_boundingBoxMode(IntPtr l) {
 		try {
@@ -113,7 +113,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_resolutionMode(IntPtr l) {
 		try {
@@ -126,7 +126,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_resolutionMode(IntPtr l) {
 		try {
@@ -141,7 +141,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_probePositionMode(IntPtr l) {
 		try {
@@ -154,7 +154,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_probePositionMode(IntPtr l) {
 		try {
@@ -169,7 +169,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_refreshMode(IntPtr l) {
 		try {
@@ -182,7 +182,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_refreshMode(IntPtr l) {
 		try {
@@ -197,7 +197,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_probeDensity(IntPtr l) {
 		try {
@@ -210,7 +210,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_probeDensity(IntPtr l) {
 		try {
@@ -225,7 +225,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_gridResolutionX(IntPtr l) {
 		try {
@@ -238,7 +238,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_gridResolutionX(IntPtr l) {
 		try {
@@ -253,7 +253,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_gridResolutionY(IntPtr l) {
 		try {
@@ -266,7 +266,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_gridResolutionY(IntPtr l) {
 		try {
@@ -281,7 +281,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_gridResolutionZ(IntPtr l) {
 		try {
@@ -294,7 +294,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_gridResolutionZ(IntPtr l) {
 		try {
@@ -309,7 +309,7 @@ public class Lua_UnityEngine_LightProbeProxyVolume : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_isFeatureSupported(IntPtr l) {
 		try {

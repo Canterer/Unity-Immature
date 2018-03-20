@@ -27,6 +27,9 @@
 --     end
 -- end
 
+print("print(\"ZSLog\")")
+Debug.Log("Debug.Log(\"ZSLog\")")
+
 function ZSInit()
 	ZS_String = ""
 	ZS_Repeart_String = {}

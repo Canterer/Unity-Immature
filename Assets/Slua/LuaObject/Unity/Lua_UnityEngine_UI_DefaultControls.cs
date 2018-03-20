@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_UI_DefaultControls : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CreatePanel_s(IntPtr l) {
 		try {
@@ -18,7 +18,7 @@ public class Lua_UnityEngine_UI_DefaultControls : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CreateButton_s(IntPtr l) {
 		try {
@@ -33,7 +33,7 @@ public class Lua_UnityEngine_UI_DefaultControls : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CreateText_s(IntPtr l) {
 		try {
@@ -48,7 +48,7 @@ public class Lua_UnityEngine_UI_DefaultControls : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CreateImage_s(IntPtr l) {
 		try {
@@ -63,7 +63,7 @@ public class Lua_UnityEngine_UI_DefaultControls : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CreateRawImage_s(IntPtr l) {
 		try {
@@ -78,7 +78,7 @@ public class Lua_UnityEngine_UI_DefaultControls : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CreateSlider_s(IntPtr l) {
 		try {
@@ -93,7 +93,7 @@ public class Lua_UnityEngine_UI_DefaultControls : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CreateScrollbar_s(IntPtr l) {
 		try {
@@ -108,7 +108,7 @@ public class Lua_UnityEngine_UI_DefaultControls : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CreateToggle_s(IntPtr l) {
 		try {
@@ -123,7 +123,7 @@ public class Lua_UnityEngine_UI_DefaultControls : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CreateInputField_s(IntPtr l) {
 		try {
@@ -138,7 +138,7 @@ public class Lua_UnityEngine_UI_DefaultControls : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CreateDropdown_s(IntPtr l) {
 		try {
@@ -153,7 +153,7 @@ public class Lua_UnityEngine_UI_DefaultControls : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CreateScrollView_s(IntPtr l) {
 		try {

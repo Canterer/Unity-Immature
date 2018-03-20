@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int constructor(IntPtr l) {
 		try {
@@ -61,7 +61,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int Evaluate(IntPtr l) {
 		try {
@@ -96,7 +96,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_mode(IntPtr l) {
 		try {
@@ -110,7 +110,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_mode(IntPtr l) {
 		try {
@@ -127,7 +127,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_curveMultiplier(IntPtr l) {
 		try {
@@ -141,7 +141,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_curveMultiplier(IntPtr l) {
 		try {
@@ -158,7 +158,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_curveMax(IntPtr l) {
 		try {
@@ -172,7 +172,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_curveMax(IntPtr l) {
 		try {
@@ -189,7 +189,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_curveMin(IntPtr l) {
 		try {
@@ -203,7 +203,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_curveMin(IntPtr l) {
 		try {
@@ -220,7 +220,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_constantMax(IntPtr l) {
 		try {
@@ -234,7 +234,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_constantMax(IntPtr l) {
 		try {
@@ -251,7 +251,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_constantMin(IntPtr l) {
 		try {
@@ -265,7 +265,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_constantMin(IntPtr l) {
 		try {
@@ -282,7 +282,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_constant(IntPtr l) {
 		try {
@@ -296,7 +296,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_constant(IntPtr l) {
 		try {
@@ -313,7 +313,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_curve(IntPtr l) {
 		try {
@@ -327,7 +327,7 @@ public class Lua_UnityEngine_ParticleSystem_MinMaxCurve : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_curve(IntPtr l) {
 		try {

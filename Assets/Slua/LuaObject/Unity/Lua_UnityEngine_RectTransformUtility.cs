@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_RectTransformUtility : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int RectangleContainsScreenPoint_s(IntPtr l) {
 		try {
@@ -38,7 +38,7 @@ public class Lua_UnityEngine_RectTransformUtility : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int ScreenPointToWorldPointInRectangle_s(IntPtr l) {
 		try {
@@ -59,7 +59,7 @@ public class Lua_UnityEngine_RectTransformUtility : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int ScreenPointToLocalPointInRectangle_s(IntPtr l) {
 		try {
@@ -80,7 +80,7 @@ public class Lua_UnityEngine_RectTransformUtility : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int ScreenPointToRay_s(IntPtr l) {
 		try {
@@ -97,7 +97,7 @@ public class Lua_UnityEngine_RectTransformUtility : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int WorldToScreenPoint_s(IntPtr l) {
 		try {
@@ -114,7 +114,7 @@ public class Lua_UnityEngine_RectTransformUtility : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CalculateRelativeRectTransformBounds_s(IntPtr l) {
 		try {
@@ -145,7 +145,7 @@ public class Lua_UnityEngine_RectTransformUtility : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int FlipLayoutOnAxis_s(IntPtr l) {
 		try {
@@ -165,7 +165,7 @@ public class Lua_UnityEngine_RectTransformUtility : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int FlipLayoutAxes_s(IntPtr l) {
 		try {
@@ -183,7 +183,7 @@ public class Lua_UnityEngine_RectTransformUtility : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int PixelAdjustPoint_s(IntPtr l) {
 		try {
@@ -202,7 +202,7 @@ public class Lua_UnityEngine_RectTransformUtility : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int PixelAdjustRect_s(IntPtr l) {
 		try {

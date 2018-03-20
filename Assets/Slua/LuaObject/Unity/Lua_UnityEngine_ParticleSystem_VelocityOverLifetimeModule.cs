@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int constructor(IntPtr l) {
 		try {
@@ -17,7 +17,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_enabled(IntPtr l) {
 		try {
@@ -31,7 +31,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_enabled(IntPtr l) {
 		try {
@@ -48,7 +48,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_x(IntPtr l) {
 		try {
@@ -62,7 +62,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_x(IntPtr l) {
 		try {
@@ -79,7 +79,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_y(IntPtr l) {
 		try {
@@ -93,7 +93,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_y(IntPtr l) {
 		try {
@@ -110,7 +110,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_z(IntPtr l) {
 		try {
@@ -124,7 +124,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_z(IntPtr l) {
 		try {
@@ -141,7 +141,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_xMultiplier(IntPtr l) {
 		try {
@@ -155,7 +155,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_xMultiplier(IntPtr l) {
 		try {
@@ -172,7 +172,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_yMultiplier(IntPtr l) {
 		try {
@@ -186,7 +186,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_yMultiplier(IntPtr l) {
 		try {
@@ -203,7 +203,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_zMultiplier(IntPtr l) {
 		try {
@@ -217,7 +217,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_zMultiplier(IntPtr l) {
 		try {
@@ -234,7 +234,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_space(IntPtr l) {
 		try {
@@ -248,7 +248,7 @@ public class Lua_UnityEngine_ParticleSystem_VelocityOverLifetimeModule : LuaObje
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_space(IntPtr l) {
 		try {

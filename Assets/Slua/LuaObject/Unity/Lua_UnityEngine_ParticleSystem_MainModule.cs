@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int constructor(IntPtr l) {
 		try {
@@ -17,7 +17,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_duration(IntPtr l) {
 		try {
@@ -31,7 +31,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_duration(IntPtr l) {
 		try {
@@ -48,7 +48,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_loop(IntPtr l) {
 		try {
@@ -62,7 +62,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_loop(IntPtr l) {
 		try {
@@ -79,7 +79,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_prewarm(IntPtr l) {
 		try {
@@ -93,7 +93,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_prewarm(IntPtr l) {
 		try {
@@ -110,7 +110,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startDelay(IntPtr l) {
 		try {
@@ -124,7 +124,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startDelay(IntPtr l) {
 		try {
@@ -141,7 +141,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startDelayMultiplier(IntPtr l) {
 		try {
@@ -155,7 +155,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startDelayMultiplier(IntPtr l) {
 		try {
@@ -172,7 +172,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startLifetime(IntPtr l) {
 		try {
@@ -186,7 +186,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startLifetime(IntPtr l) {
 		try {
@@ -203,7 +203,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startLifetimeMultiplier(IntPtr l) {
 		try {
@@ -217,7 +217,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startLifetimeMultiplier(IntPtr l) {
 		try {
@@ -234,7 +234,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startSpeed(IntPtr l) {
 		try {
@@ -248,7 +248,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startSpeed(IntPtr l) {
 		try {
@@ -265,7 +265,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startSpeedMultiplier(IntPtr l) {
 		try {
@@ -279,7 +279,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startSpeedMultiplier(IntPtr l) {
 		try {
@@ -296,7 +296,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startSize3D(IntPtr l) {
 		try {
@@ -310,7 +310,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startSize3D(IntPtr l) {
 		try {
@@ -327,7 +327,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startSize(IntPtr l) {
 		try {
@@ -341,7 +341,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startSize(IntPtr l) {
 		try {
@@ -358,7 +358,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startSizeMultiplier(IntPtr l) {
 		try {
@@ -372,7 +372,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startSizeMultiplier(IntPtr l) {
 		try {
@@ -389,7 +389,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startSizeX(IntPtr l) {
 		try {
@@ -403,7 +403,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startSizeX(IntPtr l) {
 		try {
@@ -420,7 +420,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startSizeXMultiplier(IntPtr l) {
 		try {
@@ -434,7 +434,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startSizeXMultiplier(IntPtr l) {
 		try {
@@ -451,7 +451,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startSizeY(IntPtr l) {
 		try {
@@ -465,7 +465,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startSizeY(IntPtr l) {
 		try {
@@ -482,7 +482,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startSizeYMultiplier(IntPtr l) {
 		try {
@@ -496,7 +496,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startSizeYMultiplier(IntPtr l) {
 		try {
@@ -513,7 +513,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startSizeZ(IntPtr l) {
 		try {
@@ -527,7 +527,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startSizeZ(IntPtr l) {
 		try {
@@ -544,7 +544,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startSizeZMultiplier(IntPtr l) {
 		try {
@@ -558,7 +558,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startSizeZMultiplier(IntPtr l) {
 		try {
@@ -575,7 +575,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startRotation3D(IntPtr l) {
 		try {
@@ -589,7 +589,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startRotation3D(IntPtr l) {
 		try {
@@ -606,7 +606,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startRotation(IntPtr l) {
 		try {
@@ -620,7 +620,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startRotation(IntPtr l) {
 		try {
@@ -637,7 +637,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startRotationMultiplier(IntPtr l) {
 		try {
@@ -651,7 +651,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startRotationMultiplier(IntPtr l) {
 		try {
@@ -668,7 +668,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startRotationX(IntPtr l) {
 		try {
@@ -682,7 +682,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startRotationX(IntPtr l) {
 		try {
@@ -699,7 +699,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startRotationXMultiplier(IntPtr l) {
 		try {
@@ -713,7 +713,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startRotationXMultiplier(IntPtr l) {
 		try {
@@ -730,7 +730,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startRotationY(IntPtr l) {
 		try {
@@ -744,7 +744,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startRotationY(IntPtr l) {
 		try {
@@ -761,7 +761,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startRotationYMultiplier(IntPtr l) {
 		try {
@@ -775,7 +775,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startRotationYMultiplier(IntPtr l) {
 		try {
@@ -792,7 +792,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startRotationZ(IntPtr l) {
 		try {
@@ -806,7 +806,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startRotationZ(IntPtr l) {
 		try {
@@ -823,7 +823,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startRotationZMultiplier(IntPtr l) {
 		try {
@@ -837,7 +837,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startRotationZMultiplier(IntPtr l) {
 		try {
@@ -854,7 +854,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_randomizeRotationDirection(IntPtr l) {
 		try {
@@ -868,7 +868,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_randomizeRotationDirection(IntPtr l) {
 		try {
@@ -885,7 +885,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_startColor(IntPtr l) {
 		try {
@@ -899,7 +899,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_startColor(IntPtr l) {
 		try {
@@ -916,7 +916,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_gravityModifier(IntPtr l) {
 		try {
@@ -930,7 +930,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_gravityModifier(IntPtr l) {
 		try {
@@ -947,7 +947,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_gravityModifierMultiplier(IntPtr l) {
 		try {
@@ -961,7 +961,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_gravityModifierMultiplier(IntPtr l) {
 		try {
@@ -978,7 +978,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_simulationSpace(IntPtr l) {
 		try {
@@ -992,7 +992,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_simulationSpace(IntPtr l) {
 		try {
@@ -1009,7 +1009,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_customSimulationSpace(IntPtr l) {
 		try {
@@ -1023,7 +1023,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_customSimulationSpace(IntPtr l) {
 		try {
@@ -1040,7 +1040,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_simulationSpeed(IntPtr l) {
 		try {
@@ -1054,7 +1054,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_simulationSpeed(IntPtr l) {
 		try {
@@ -1071,7 +1071,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_scalingMode(IntPtr l) {
 		try {
@@ -1085,7 +1085,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_scalingMode(IntPtr l) {
 		try {
@@ -1102,7 +1102,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_playOnAwake(IntPtr l) {
 		try {
@@ -1116,7 +1116,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_playOnAwake(IntPtr l) {
 		try {
@@ -1133,7 +1133,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_maxParticles(IntPtr l) {
 		try {
@@ -1147,7 +1147,7 @@ public class Lua_UnityEngine_ParticleSystem_MainModule : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_maxParticles(IntPtr l) {
 		try {

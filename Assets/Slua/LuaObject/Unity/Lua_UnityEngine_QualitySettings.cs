@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_QualitySettings : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int constructor(IntPtr l) {
 		try {
@@ -17,7 +17,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetQualityLevel_s(IntPtr l) {
 		try {
@@ -30,7 +30,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetQualityLevel_s(IntPtr l) {
 		try {
@@ -59,7 +59,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int IncreaseLevel_s(IntPtr l) {
 		try {
@@ -84,7 +84,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int DecreaseLevel_s(IntPtr l) {
 		try {
@@ -109,7 +109,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_names(IntPtr l) {
 		try {
@@ -121,7 +121,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_pixelLightCount(IntPtr l) {
 		try {
@@ -133,7 +133,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_pixelLightCount(IntPtr l) {
 		try {
@@ -147,7 +147,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_shadows(IntPtr l) {
 		try {
@@ -159,7 +159,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_shadows(IntPtr l) {
 		try {
@@ -173,7 +173,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_shadowProjection(IntPtr l) {
 		try {
@@ -185,7 +185,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_shadowProjection(IntPtr l) {
 		try {
@@ -199,7 +199,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_shadowCascades(IntPtr l) {
 		try {
@@ -211,7 +211,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_shadowCascades(IntPtr l) {
 		try {
@@ -225,7 +225,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_shadowDistance(IntPtr l) {
 		try {
@@ -237,7 +237,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_shadowDistance(IntPtr l) {
 		try {
@@ -251,7 +251,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_shadowResolution(IntPtr l) {
 		try {
@@ -263,7 +263,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_shadowResolution(IntPtr l) {
 		try {
@@ -277,7 +277,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_shadowNearPlaneOffset(IntPtr l) {
 		try {
@@ -289,7 +289,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_shadowNearPlaneOffset(IntPtr l) {
 		try {
@@ -303,7 +303,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_shadowCascade2Split(IntPtr l) {
 		try {
@@ -315,7 +315,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_shadowCascade2Split(IntPtr l) {
 		try {
@@ -329,7 +329,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_shadowCascade4Split(IntPtr l) {
 		try {
@@ -341,7 +341,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_shadowCascade4Split(IntPtr l) {
 		try {
@@ -355,7 +355,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_masterTextureLimit(IntPtr l) {
 		try {
@@ -367,7 +367,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_masterTextureLimit(IntPtr l) {
 		try {
@@ -381,7 +381,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_anisotropicFiltering(IntPtr l) {
 		try {
@@ -393,7 +393,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_anisotropicFiltering(IntPtr l) {
 		try {
@@ -407,7 +407,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_lodBias(IntPtr l) {
 		try {
@@ -419,7 +419,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_lodBias(IntPtr l) {
 		try {
@@ -433,7 +433,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_maximumLODLevel(IntPtr l) {
 		try {
@@ -445,7 +445,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_maximumLODLevel(IntPtr l) {
 		try {
@@ -459,7 +459,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_particleRaycastBudget(IntPtr l) {
 		try {
@@ -471,7 +471,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_particleRaycastBudget(IntPtr l) {
 		try {
@@ -485,7 +485,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_softParticles(IntPtr l) {
 		try {
@@ -497,7 +497,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_softParticles(IntPtr l) {
 		try {
@@ -511,7 +511,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_softVegetation(IntPtr l) {
 		try {
@@ -523,7 +523,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_softVegetation(IntPtr l) {
 		try {
@@ -537,7 +537,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_realtimeReflectionProbes(IntPtr l) {
 		try {
@@ -549,7 +549,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_realtimeReflectionProbes(IntPtr l) {
 		try {
@@ -563,7 +563,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_billboardsFaceCameraPosition(IntPtr l) {
 		try {
@@ -575,7 +575,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_billboardsFaceCameraPosition(IntPtr l) {
 		try {
@@ -589,7 +589,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_maxQueuedFrames(IntPtr l) {
 		try {
@@ -601,7 +601,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_maxQueuedFrames(IntPtr l) {
 		try {
@@ -615,7 +615,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_vSyncCount(IntPtr l) {
 		try {
@@ -627,7 +627,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_vSyncCount(IntPtr l) {
 		try {
@@ -641,7 +641,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_antiAliasing(IntPtr l) {
 		try {
@@ -653,7 +653,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_antiAliasing(IntPtr l) {
 		try {
@@ -667,7 +667,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_desiredColorSpace(IntPtr l) {
 		try {
@@ -679,7 +679,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_activeColorSpace(IntPtr l) {
 		try {
@@ -691,7 +691,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_blendWeights(IntPtr l) {
 		try {
@@ -703,7 +703,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_blendWeights(IntPtr l) {
 		try {
@@ -717,7 +717,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_asyncUploadTimeSlice(IntPtr l) {
 		try {
@@ -729,7 +729,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_asyncUploadTimeSlice(IntPtr l) {
 		try {
@@ -743,7 +743,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_asyncUploadBufferSize(IntPtr l) {
 		try {
@@ -755,7 +755,7 @@ public class Lua_UnityEngine_QualitySettings : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_asyncUploadBufferSize(IntPtr l) {
 		try {

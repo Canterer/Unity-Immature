@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_secondaryAxis(IntPtr l) {
 		try {
@@ -16,7 +16,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_secondaryAxis(IntPtr l) {
 		try {
@@ -31,7 +31,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_xMotion(IntPtr l) {
 		try {
@@ -44,7 +44,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_xMotion(IntPtr l) {
 		try {
@@ -59,7 +59,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_yMotion(IntPtr l) {
 		try {
@@ -72,7 +72,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_yMotion(IntPtr l) {
 		try {
@@ -87,7 +87,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_zMotion(IntPtr l) {
 		try {
@@ -100,7 +100,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_zMotion(IntPtr l) {
 		try {
@@ -115,7 +115,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_angularXMotion(IntPtr l) {
 		try {
@@ -128,7 +128,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_angularXMotion(IntPtr l) {
 		try {
@@ -143,7 +143,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_angularYMotion(IntPtr l) {
 		try {
@@ -156,7 +156,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_angularYMotion(IntPtr l) {
 		try {
@@ -171,7 +171,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_angularZMotion(IntPtr l) {
 		try {
@@ -184,7 +184,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_angularZMotion(IntPtr l) {
 		try {
@@ -199,7 +199,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_linearLimitSpring(IntPtr l) {
 		try {
@@ -212,7 +212,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_linearLimitSpring(IntPtr l) {
 		try {
@@ -227,7 +227,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_angularXLimitSpring(IntPtr l) {
 		try {
@@ -240,7 +240,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_angularXLimitSpring(IntPtr l) {
 		try {
@@ -255,7 +255,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_angularYZLimitSpring(IntPtr l) {
 		try {
@@ -268,7 +268,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_angularYZLimitSpring(IntPtr l) {
 		try {
@@ -283,7 +283,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_linearLimit(IntPtr l) {
 		try {
@@ -296,7 +296,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_linearLimit(IntPtr l) {
 		try {
@@ -311,7 +311,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_lowAngularXLimit(IntPtr l) {
 		try {
@@ -324,7 +324,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_lowAngularXLimit(IntPtr l) {
 		try {
@@ -339,7 +339,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_highAngularXLimit(IntPtr l) {
 		try {
@@ -352,7 +352,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_highAngularXLimit(IntPtr l) {
 		try {
@@ -367,7 +367,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_angularYLimit(IntPtr l) {
 		try {
@@ -380,7 +380,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_angularYLimit(IntPtr l) {
 		try {
@@ -395,7 +395,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_angularZLimit(IntPtr l) {
 		try {
@@ -408,7 +408,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_angularZLimit(IntPtr l) {
 		try {
@@ -423,7 +423,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_targetPosition(IntPtr l) {
 		try {
@@ -436,7 +436,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_targetPosition(IntPtr l) {
 		try {
@@ -451,7 +451,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_targetVelocity(IntPtr l) {
 		try {
@@ -464,7 +464,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_targetVelocity(IntPtr l) {
 		try {
@@ -479,7 +479,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_xDrive(IntPtr l) {
 		try {
@@ -492,7 +492,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_xDrive(IntPtr l) {
 		try {
@@ -507,7 +507,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_yDrive(IntPtr l) {
 		try {
@@ -520,7 +520,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_yDrive(IntPtr l) {
 		try {
@@ -535,7 +535,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_zDrive(IntPtr l) {
 		try {
@@ -548,7 +548,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_zDrive(IntPtr l) {
 		try {
@@ -563,7 +563,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_targetRotation(IntPtr l) {
 		try {
@@ -576,7 +576,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_targetRotation(IntPtr l) {
 		try {
@@ -591,7 +591,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_targetAngularVelocity(IntPtr l) {
 		try {
@@ -604,7 +604,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_targetAngularVelocity(IntPtr l) {
 		try {
@@ -619,7 +619,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_rotationDriveMode(IntPtr l) {
 		try {
@@ -632,7 +632,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_rotationDriveMode(IntPtr l) {
 		try {
@@ -647,7 +647,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_angularXDrive(IntPtr l) {
 		try {
@@ -660,7 +660,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_angularXDrive(IntPtr l) {
 		try {
@@ -675,7 +675,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_angularYZDrive(IntPtr l) {
 		try {
@@ -688,7 +688,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_angularYZDrive(IntPtr l) {
 		try {
@@ -703,7 +703,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_slerpDrive(IntPtr l) {
 		try {
@@ -716,7 +716,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_slerpDrive(IntPtr l) {
 		try {
@@ -731,7 +731,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_projectionMode(IntPtr l) {
 		try {
@@ -744,7 +744,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_projectionMode(IntPtr l) {
 		try {
@@ -759,7 +759,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_projectionDistance(IntPtr l) {
 		try {
@@ -772,7 +772,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_projectionDistance(IntPtr l) {
 		try {
@@ -787,7 +787,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_projectionAngle(IntPtr l) {
 		try {
@@ -800,7 +800,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_projectionAngle(IntPtr l) {
 		try {
@@ -815,7 +815,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_configuredInWorldSpace(IntPtr l) {
 		try {
@@ -828,7 +828,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_configuredInWorldSpace(IntPtr l) {
 		try {
@@ -843,7 +843,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_swapBodies(IntPtr l) {
 		try {
@@ -856,7 +856,7 @@ public class Lua_UnityEngine_ConfigurableJoint : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_swapBodies(IntPtr l) {
 		try {

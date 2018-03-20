@@ -7,7 +7,7 @@ namespace SLua
     public class LuaUnityEvent_bool : LuaObject
     {
 
-        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        [SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static public int AddListener(IntPtr l)
         {
             try
@@ -24,7 +24,7 @@ namespace SLua
 				return error(l,e);
             }
         }
-        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        [SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static public int RemoveListener(IntPtr l)
         {
             try
@@ -41,7 +41,7 @@ namespace SLua
                 return error(l,e);
             }
         }
-        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        [SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
         static public int Invoke(IntPtr l)
         {
             try

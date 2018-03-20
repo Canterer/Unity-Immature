@@ -100,34 +100,34 @@ public static class IFooExt
 	}
 }
 
-namespace SLua {
+// namespace SLua {
 	
-	[OverloadLuaClass(typeof(GameObject))]
-	public class MyGameObject : LuaObject {
-		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-		public static int Find_s(IntPtr l) {
-			UnityEngine.Debug.Log ("GameObject.Find overloaded my MyGameObject.Find");
-			try {
-				System.String a1;
-				checkType(l,1,out a1);
-				var ret=UnityEngine.GameObject.Find(a1);
-				pushValue(l,true);
-				pushValue(l,ret);
-				return 2;
-			}
-			catch(Exception e) {
-				return error(l,e);
-			}
-		}
-	}
+// 	[OverloadLuaClass(typeof(GameObject))]
+// 	public class MyGameObject : LuaObject {
+// 		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+// 		public static int Find_s(IntPtr l) {
+// 			UnityEngine.Debug.Log ("GameObject.Find overloaded my MyGameObject.Find");
+// 			try {
+// 				System.String a1;
+// 				checkType(l,1,out a1);
+// 				var ret=UnityEngine.GameObject.Find(a1);
+// 				pushValue(l,true);
+// 				pushValue(l,ret);
+// 				return 2;
+// 			}
+// 			catch(Exception e) {
+// 				return error(l,e);
+// 			}
+// 		}
+// 	}
 
 
-    [OverloadLuaClass(typeof(UnityEngine.RenderSettings))]
-    public class RenderSettingsEx : LuaObject {
-		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-        public static int set_fogDensity(IntPtr l) {
-            return 0;
-        }
-    }
+//     [OverloadLuaClass(typeof(UnityEngine.RenderSettings))]
+//     public class RenderSettingsEx : LuaObject {
+// 		[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+//         public static int set_fogDensity(IntPtr l) {
+//             return 0;
+//         }
+//     }
 
-}
+// }

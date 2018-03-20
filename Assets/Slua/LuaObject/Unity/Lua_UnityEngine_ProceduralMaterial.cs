@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetProceduralPropertyDescriptions(IntPtr l) {
 		try {
@@ -17,7 +17,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int HasProceduralProperty(IntPtr l) {
 		try {
@@ -33,7 +33,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetProceduralBoolean(IntPtr l) {
 		try {
@@ -49,7 +49,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int IsProceduralPropertyVisible(IntPtr l) {
 		try {
@@ -65,7 +65,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetProceduralBoolean(IntPtr l) {
 		try {
@@ -82,7 +82,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetProceduralFloat(IntPtr l) {
 		try {
@@ -98,7 +98,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetProceduralFloat(IntPtr l) {
 		try {
@@ -115,7 +115,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetProceduralVector(IntPtr l) {
 		try {
@@ -131,7 +131,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetProceduralVector(IntPtr l) {
 		try {
@@ -148,7 +148,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetProceduralColor(IntPtr l) {
 		try {
@@ -164,7 +164,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetProceduralColor(IntPtr l) {
 		try {
@@ -181,7 +181,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetProceduralEnum(IntPtr l) {
 		try {
@@ -197,7 +197,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetProceduralEnum(IntPtr l) {
 		try {
@@ -214,7 +214,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetProceduralTexture(IntPtr l) {
 		try {
@@ -230,7 +230,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetProceduralTexture(IntPtr l) {
 		try {
@@ -247,7 +247,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int IsProceduralPropertyCached(IntPtr l) {
 		try {
@@ -263,7 +263,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CacheProceduralProperty(IntPtr l) {
 		try {
@@ -280,7 +280,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int ClearCache(IntPtr l) {
 		try {
@@ -293,7 +293,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int RebuildTextures(IntPtr l) {
 		try {
@@ -306,7 +306,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int RebuildTexturesImmediately(IntPtr l) {
 		try {
@@ -319,7 +319,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetGeneratedTextures(IntPtr l) {
 		try {
@@ -333,7 +333,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetGeneratedTexture(IntPtr l) {
 		try {
@@ -349,7 +349,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int FreezeAndReleaseSourceData(IntPtr l) {
 		try {
@@ -362,7 +362,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int StopRebuilds_s(IntPtr l) {
 		try {
@@ -374,7 +374,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_cacheSize(IntPtr l) {
 		try {
@@ -387,7 +387,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_cacheSize(IntPtr l) {
 		try {
@@ -402,7 +402,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_animationUpdateRate(IntPtr l) {
 		try {
@@ -415,7 +415,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_animationUpdateRate(IntPtr l) {
 		try {
@@ -430,7 +430,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_isProcessing(IntPtr l) {
 		try {
@@ -443,7 +443,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_isCachedDataAvailable(IntPtr l) {
 		try {
@@ -456,7 +456,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_isLoadTimeGenerated(IntPtr l) {
 		try {
@@ -469,7 +469,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_isLoadTimeGenerated(IntPtr l) {
 		try {
@@ -484,7 +484,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_loadingBehavior(IntPtr l) {
 		try {
@@ -497,7 +497,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_isSupported(IntPtr l) {
 		try {
@@ -509,7 +509,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_substanceProcessorUsage(IntPtr l) {
 		try {
@@ -521,7 +521,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_substanceProcessorUsage(IntPtr l) {
 		try {
@@ -535,7 +535,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_preset(IntPtr l) {
 		try {
@@ -548,7 +548,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_preset(IntPtr l) {
 		try {
@@ -563,7 +563,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_isReadable(IntPtr l) {
 		try {
@@ -576,7 +576,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_isReadable(IntPtr l) {
 		try {
@@ -591,7 +591,7 @@ public class Lua_UnityEngine_ProceduralMaterial : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_isFrozen(IntPtr l) {
 		try {

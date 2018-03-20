@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetMouseButtonDown(IntPtr l) {
 		try {
@@ -19,7 +19,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetMouseButtonUp(IntPtr l) {
 		try {
@@ -35,7 +35,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetMouseButton(IntPtr l) {
 		try {
@@ -51,7 +51,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetTouch(IntPtr l) {
 		try {
@@ -67,7 +67,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetAxisRaw(IntPtr l) {
 		try {
@@ -83,7 +83,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetButtonDown(IntPtr l) {
 		try {
@@ -99,7 +99,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_compositionString(IntPtr l) {
 		try {
@@ -112,7 +112,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_imeCompositionMode(IntPtr l) {
 		try {
@@ -125,7 +125,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_imeCompositionMode(IntPtr l) {
 		try {
@@ -140,7 +140,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_compositionCursorPos(IntPtr l) {
 		try {
@@ -153,7 +153,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int set_compositionCursorPos(IntPtr l) {
 		try {
@@ -168,7 +168,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_mousePresent(IntPtr l) {
 		try {
@@ -181,7 +181,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_mousePosition(IntPtr l) {
 		try {
@@ -194,7 +194,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_mouseScrollDelta(IntPtr l) {
 		try {
@@ -207,7 +207,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_touchSupported(IntPtr l) {
 		try {
@@ -220,7 +220,7 @@ public class Lua_UnityEngine_EventSystems_BaseInput : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_touchCount(IntPtr l) {
 		try {

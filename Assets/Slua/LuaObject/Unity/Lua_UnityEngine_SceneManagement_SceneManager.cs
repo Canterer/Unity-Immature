@@ -3,7 +3,7 @@ using SLua;
 using System.Collections.Generic;
 [UnityEngine.Scripting.Preserve]
 public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int constructor(IntPtr l) {
 		try {
@@ -17,7 +17,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetActiveScene_s(IntPtr l) {
 		try {
@@ -30,7 +30,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int SetActiveScene_s(IntPtr l) {
 		try {
@@ -45,7 +45,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetSceneByPath_s(IntPtr l) {
 		try {
@@ -60,7 +60,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetSceneByName_s(IntPtr l) {
 		try {
@@ -75,7 +75,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetSceneByBuildIndex_s(IntPtr l) {
 		try {
@@ -90,7 +90,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int GetSceneAt_s(IntPtr l) {
 		try {
@@ -105,7 +105,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int LoadScene_s(IntPtr l) {
 		try {
@@ -150,7 +150,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int LoadSceneAsync_s(IntPtr l) {
 		try {
@@ -199,7 +199,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int CreateScene_s(IntPtr l) {
 		try {
@@ -214,7 +214,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int UnloadSceneAsync_s(IntPtr l) {
 		try {
@@ -251,7 +251,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int MergeScenes_s(IntPtr l) {
 		try {
@@ -267,7 +267,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int MoveGameObjectToScene_s(IntPtr l) {
 		try {
@@ -283,7 +283,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_sceneCount(IntPtr l) {
 		try {
@@ -295,7 +295,7 @@ public class Lua_UnityEngine_SceneManagement_SceneManager : LuaObject {
 			return error(l,e);
 		}
 	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	[SLua.MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	[UnityEngine.Scripting.Preserve]
 	static public int get_sceneCountInBuildSettings(IntPtr l) {
 		try {
