@@ -53,9 +53,11 @@ function ZSInit()
 	ZS_White_List = {
 		-- { protoHead = 98 }, -- 监听该协议头
 		-- { protoHead = 98 }, -- 监听该协议头
-		{ min = 100, max = 111 }, --测试
-		{ min = 9802, max = 9804 }, --"活"字模块
+		-- { protoHead = 106 }, -- 装备
+		-- { min = 100, max = 111 }, --测试
+		-- { min = 9802, max = 9804 }, --"活"字模块
 		{ min = 14600, max = 14605 }, --监听该区域协议
+		-- { min = 10608, max = 10608 }, --监听该区域协议
 		-- { min = 9802, max = 9803 }, --监听该区域协议
 	}
 	ZS_Black_List = {
