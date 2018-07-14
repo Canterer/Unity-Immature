@@ -1,0 +1,23 @@
+
+GameLuaStart:Start()
+平台环境设置涉及类：
+	Lua_UnityEngine_Application.cs
+	Lua_UnityEngine_QualitySettings.cs
+	Lua_UnityEngine_Time.cs
+	Lua_UnityEngine_RuntimePlatform.cs
+	Lua_UnityEngine_BlendWeights.cs
+	Lua_UnityEngine_AnisotropicFiltering.cs
+	
+	
+ModuleManager:Activate()//激活模块管理器
+
+GameLuaStart:Update()
+{
+	self.moduleManager:Update()
+	EventMgr:Fire(event_name.frame_update, Time.deltaTime)
+}
+GameLuaStart:FixedUpdate()
+{
+	self.moduleManager:Update()
+}
+由此可以看出  帧循环调用主要是传递 给moduleManager 和 触发frame_update事件
