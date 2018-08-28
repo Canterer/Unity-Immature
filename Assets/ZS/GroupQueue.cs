@@ -1,7 +1,7 @@
-// using System.Collections.Generic;
-// using UnityEngine;
+using System.Collections.Generic;
+using UnityEngine;
 
-// namespace ZS.Loader {
-// 	public abstract class GroupQueue<T> : IReleaseToPool {
-// 	}
-// }
+namespace ZS.Loader {
+	public abstract class GroupQueue<T> : IReleaseToPool {
+	}
+}

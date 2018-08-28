@@ -23,20 +23,20 @@ function XXManager:InitMemberData()
 end
 
 function XXManager:InitHandler()
-	-- self:AddNetHandler(12300, self.On12300)
+    -- self:AddNetHandler(12300, self.On12300)
 end
 
 function XXManager:ReqInitData()
-	-- self:Send12310()
+    -- self:Send12310()
 end
 
 ------------------ 协议 -------------------
 function XXManager:Send12300()
-	self:Send(12300,{})
+    self:Send(12300,{})
 end
 
 function XXManager:On12300(data)
-	-- NoticeManager.Instance:MsgDispatch(data)
+    -- NoticeManager.Instance:MsgDispatch(data)
 end
 
 ------------------ 数据接口 ------------------
