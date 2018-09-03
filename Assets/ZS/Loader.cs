@@ -29,7 +29,7 @@ namespace ZS.Loader
 		static protected List<CRequest> loadingTasks = new List<CRequest>();
 
 		// load asset or www operations
-		static List<ResourcesLoadOperation> inProgressOperations = new List<ResourcesLoadOperation>();
+		static List<LoadOperation> inProgressOperations = new List<LoadOperation>();
 		// load assetbundle operations
 		static List<AssetBundleLoadOperation> inProgressBundleOperations = new List<AssetBundleLoadOperation>();
 
@@ -174,7 +174,7 @@ namespace ZS.Loader
 			}
 
 			//load asset
-			ResourcesLoadOperation operation;
+			LoadOperation operation;
 			var tp = req.assetType;
 			if(req.assetOperation != null){
 				operation = req.assetOperation;
