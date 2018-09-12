@@ -1,4 +1,3 @@
-
 /*
 name:
 desc:AssetBundleDownloadOperation 资源集下载选项
@@ -9,6 +8,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Networking;
+using ZS.Utils;
 
 namespace ZS.Loader
 {	
@@ -159,8 +159,8 @@ namespace ZS.Loader
 		private void _BeginDownload()
 		{
 			string url = CUtils.GetAndroidABLoadPath(cRequest.url);
-			var abInfo = ManifestManager.GetABInfo(CRequest.key);
-			if (abInfo != null && abInfo.size < ResourcesLoader.asyncSize)
+			var abInfo = ManifestManager.GetABInfo(cRequest.key);
+			if (abInfo != null && abInfo.size < Loader.asyncSize)
 			{
 				assetBundle = AssetBundle.LoadFromFile(url);
 			}else{
