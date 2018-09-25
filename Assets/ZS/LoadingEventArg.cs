@@ -10,7 +10,7 @@ namespace ZS.Loader {
     		get;
     		internal set;
     	}
-    	public long tatal {
+    	public long total {
     		get;
     		internal set;
     	}
@@ -18,6 +18,8 @@ namespace ZS.Loader {
     		get;
     		internal set;
     	}
+
+        public float progress;
 
     	// 基类 ProgressChangedEventArgs 为ProgressChanged事件提供数据
     	// 属性: ProgressPercentage 获取异步任务进度百分比、 UserState 获取唯一的用户状态

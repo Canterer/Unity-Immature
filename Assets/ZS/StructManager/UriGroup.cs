@@ -7,6 +7,7 @@ author:ZS
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using UnityEngine.Networking;
 
 namespace ZS.Loader
 {
@@ -83,5 +84,29 @@ namespace ZS.Loader
         	// if(onOverrideUrl != null)
         	// 	AddOnOverrideUrls(index, onOverrideUrl);
         }
+
+
+
+        internal void OnWWWComplete(CRequest req, byte[] bytes){
+            Action<CRequest, Array> act = null;
+            if(onWWWComplete != null && onWWWComplete.TryGetValue(req.index, out act))
+                act(req, bytes);
+        }        
+        internal void OnWWWComplete(CRequest req, UnityWebRequest www){
+            Action<CRequest, Array> act = null;
+            if(onWWWComplete != null && onWWWComplete.TryGetValue(req.index, out act))
+                act(req, www.downloadHandler.data);
+        }
+
+        // check WWW Complete event
+        public static void CheckWWWComplete(CRequest req, WWW www){
+            if(req.uris != null)
+                req.uris.OnWWWComplete(req, www.bytes);
+        }
+        public static void CheckWWWComplete(CRequest req, UnityWebRequest www){
+            if(req.uris != null)
+                req.uris.onWWWComplete(req, www);
+        }
+
     }
 }

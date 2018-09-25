@@ -8,6 +8,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Networking;
+using ZS.Utils;
 
 namespace ZS.Loader
 {
@@ -40,6 +41,10 @@ namespace ZS.Loader
         // 链表管理函数
         public bool MoveNext(){ return !IsDone(); }
 
+        // 实现继承的函数接口
+        public object Current{
+            get { return null; }
+        }
 
         // 重置函数 直接将变量置空  
         // 是因为CRequest、LoadOperation都继承ObjectPool，不需要显示释放内存
@@ -65,7 +70,7 @@ namespace ZS.Loader
         protected void RegisterBeginDownLoad(System.Action beginDownLoad){
             m_BeginDownLoad = beginDownLoad;
         }
-        public void BeginDownLoad(){
+        public void BeginDownload(){
             if (m_BeginDownLoad != null)
                 m_BeginDownLoad();
         }
@@ -97,7 +102,7 @@ namespace ZS.Loader
         private void _BeginDownLoad(){
             m_Data = null;
             var head = cRequest.head;
-            string url = CUtils.CheckWWWUrl(CRequest.url);
+            string url = CUtils.CheckWWWUrl(cRequest.url);
             bool isOverrideHost = string.IsNullOrEmpty(cRequest.overrideHost);
 
             if (head is WWWForm){
@@ -120,7 +125,7 @@ namespace ZS.Loader
                 m_webrequest = new WWW(url);
         }
         private void FinishDownload(){
-            if(m_webrequest == nul){
+            if(m_webrequest == null){
                 error = string.Format("webrequest is null, {0}", cRequest.key);
                 return;
             }

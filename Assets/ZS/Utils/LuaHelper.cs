@@ -19,6 +19,11 @@ namespace ZS.Utils
 		{
 			int hash = Animator.StringToHash(str);
 			return hash;
+		}
+
+		public static byte[] GetBytes(string utf8Str)
+		{
+			return System.Text.Encoding.UTF8.GetBytes(utf8Str);
 		}	
 	}
 }

@@ -48,7 +48,7 @@ namespace ZS.Loader
 		static public void LoadGroupAsset(BundleGroundQueue bGroup){
 			LoadingQueue();
 		}
-		static public AssetBundleLoadOperation LoadAssetCoroutine(string abName, string assetName, System.Type type, int priority = 0){
+		static public AssetBundleLoadAssetOperation LoadAssetCoroutine(string abName, string assetName, System.Type type, int priority = 0){
 			var req = CRequest.Get();
 			return LoadAsset(req, true);
 		}
@@ -226,10 +226,62 @@ namespace ZS.Loader
 			if (parent != null)
 				abName = CUtils.GetBaseName(parent.assetBundleName);
 
+			string dep_url;
+			string depAbName = "";
+			CRequest item;
+			int[] hashs = new int[deps.Length];
+			int keyHash;
 			for(int i = 0; i < deps.length; ++i)
 			{
-				
+				depAbName = CUtils.GetBaseName(deps[i]);
+				if( abName == depAbName)
+				{
+					hashs[i] = 0;
+					continue;
+				}
+				dep_url = ManifestManager.RemapVariantName(depAbName);
+				keyHash = LuaHelper.StringToHash(dep_url);
+				hashs[i] = keyHash;
+
+				CacheData sharedCD = CacheManager.TryGetCache(keyHash);
+				if(sharedCD != null)
+				{
+					sharedCD.count++;//引用计数加一
+					int count = sharedCD.count;
+					if(count == 1)//相加后为1，可能在回收列表，需要对所有依赖项目引用
+						ABDelayUnloadManager.CheckRemove(keyHash);
+				}else
+				{
+					int count = CountManager.WillAdd(keyHash);//引用数量加1
+
+					item = CRequest.Get();
+					item.relativeUrl = dep_url;
+					item.isShared = true;
+					item.async = req.async;
+					item.priority = req.priority;
+					item.dependencies = LoadDependencies(item, req);
+					item.uris = req.uris;
+
+					LoadAssetBundleInternal(item);
+				}
 			}
+			return hashs;
+		}
+
+
+		// dispatch request event
+		static internal void DispatchReqAssetOperation(CRequest req, bool isError)
+		{
+			var group = req.group;
+			if(isError)
+				req.DispatchEnd();
+			else
+				req.DispatchComplete();
+
+			if(group != null)
+				group.Complete(req, isError);
+
+			req.ReleaseToPool();
 		}
 		
 	}

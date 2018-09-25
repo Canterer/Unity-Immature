@@ -44,5 +44,14 @@ namespace ZS.Loader
 			}
 			return abInfo.state == ABInfoState.Success;
 		}
+
+
+		// get the best fit variant name
+		public static string GetVariantName(string assetBundleName)
+		{
+			string md5name = CUtils.GetRightFileName(assetBundleName);//CryptographHelper.Md5String(baseName);
+
+			var bundlesVariants = ManifestManager.fileManifest.GetVariants(md5name);
+		}
 	}
 }

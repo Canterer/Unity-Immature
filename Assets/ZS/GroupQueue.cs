@@ -128,9 +128,9 @@ namespace ZS.Loader {
 
 	public sealed class BundleGroundQueue : GroupQueue<CRequest>{
 		public override void Enqueue(CRequest req){
-			if(ResourcesLoader.LoadAssetFromCache(req)){
+			if(Loader.LoadAssetFromCache(req)){
 				ABDelayUnloadManager.CheckRemove(req.keyHashCode);
-				ResourcesLoader.DispatchReqAssetOperation(req, false);
+				Loader.DispatchReqAssetOperation(req, false);
 			}else{
 				req.group = this;
 				base.Enqueue(req);
