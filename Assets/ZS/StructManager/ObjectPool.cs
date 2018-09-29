@@ -24,6 +24,10 @@ namespace ZS.Pool
         private readonly System.Action<T> m_ActionOnGet;// 获取回调动作
         private readonly System.Action<T> m_ActionOnRelease;// 释放回调动作
 
+        public int countAll { get; private set; }
+        public int countActive { get{ return countAll - countInactive; } }
+        public int countInactive{ get { return m_Stack.Count; } }
+
         // 构造函数
         public ObjectPool(Action<T> actionOnGet, Action<T> actionOnRelease)
         {
@@ -58,5 +62,13 @@ namespace ZS.Pool
                 m_ActionOnRelease(element);
             m_Stack.Push(element);
         }
+    }
+
+    public static class ListPool<T>
+    {
+        // object pool to avoid allocations
+        private static readonly ObjectPool<List<T>> s_ListPool = new ObjectPool<List<T>>(null, l => l.Clear());
+        public static List<T> Get(){ return s_ListPool.Get(); }
+        public static void Release(List<T> toRelease){ s_ListPool.Release(toRelease); }
     }
 }

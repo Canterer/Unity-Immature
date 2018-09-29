@@ -345,18 +345,18 @@ namespace ZS.Loader
                 }else{
 
                     var type = cRequest.assetType;
-                    bool loadAll = CacheManager.Typeof_ABAllAssets.Equals(type);
+                    // bool loadAll = CacheManager.Typeof_ABAllAssets.Equals(type);
 
                     if(cRequest.async){
-                        if(loadAll)
+                        // if(loadAll)
                             m_Requst = bundle.assetBundle.LoadAllAssetsAsync();
-                        else
-                            m_Requst = bundle.assetBundle.LoadAssetsAsync(cRequest.assetName, type);
+                        // else
+                            // m_Requst = bundle.assetBundle.LoadAssetsAsync(cRequest.assetName, type);
                     }else{
-                        if(loadAll)
+                        // if(loadAll)
                             m_Data = bundle.assetBundle.LoadAllAssets();
-                        else
-                            m_Data = bundle.assetBundle.LoadAsset(cRequest.assetName, type);
+                        // else
+                            // m_Data = bundle.assetBundle.LoadAsset(cRequest.assetName, type);
 
                         if(m_Data == null)
                             error = string.Format("load asset{0} from {1} error", cRequest.assetName, cRequest.key);
@@ -421,4 +421,52 @@ namespace ZS.Loader
     }
 
 
+    public class AssetBundleLoadLevelOperation : AssetBundleLoadAssetOperation {
+        protected AsyncOperation m_Requst;
+
+        public AssetBundleLoadLevelOperation(){
+            RegisterEvent(_Update, _IsDone);
+        }
+
+        private bool _Update(){
+            if(m_Requst != null)
+                return false;
+
+            CacheData bundle = CacheManager.TryGetCache(cRequest.keyHashCode);
+            if(bundle != null && bundle.isDone){
+                if(bundle.isError || !bundle.isDone)
+                {
+                    error = string.Format("load asset form {0} error", cRequest.assetName, cRequest.key);
+                    return false;
+                }else
+                {
+                    #if UNITY_5_0 || UNITY_5_1 || UNITY_5_2
+                        if(cRequest.isAdditive)
+                            m_Requst = Application.LoadLevelAdditiveAsync(cRequest.assetName);
+                        else
+                            m_Requst = Application.LoadLevelAsync(cRequest.assetName);
+                    #else
+                        m_Requst = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(cRequest.assetName, cRequest.isAdditive ? UnityEngine.SceneManagement.LoadSceneMode.Additive : UnityEngine.SceneManagement.LoadSceneMode.Single);
+                    #endif
+
+                    return false;
+                }
+            }else
+                return true;
+        }
+
+        bool _IsDone(){
+            // return if meeting downloading error.
+            // m_DownloadingError might come from the dependency downloading
+            if( m_Requst == null && error != null){
+                Debug.LogError(error);
+                return true;
+            }
+            return m_Requst != null && m_Requst.isDone;
+        }
+
+        public override void Reset(){
+            base.Reset();
+        }
+    }
 }

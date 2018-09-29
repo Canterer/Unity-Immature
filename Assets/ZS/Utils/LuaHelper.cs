@@ -27,3 +27,10 @@ namespace ZS.Utils
 		}	
 	}
 }
+
+/// 用来加载场景的type类型
+[SLua.CustomLuaClass]
+public class AssetBundleScene
+{
+
+}

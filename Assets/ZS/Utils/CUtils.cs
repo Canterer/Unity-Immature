@@ -7,6 +7,7 @@ author:ZS
 using System;
 using UnityEngine;
 using System.IO;
+using ZS.Cryptograph;
 
 namespace ZS.Utils
 {
@@ -49,6 +50,7 @@ namespace ZS.Utils
 			}
 			set { _realPersistentDataPath = null; }
 		}
+		public static string GetRealPersistentDataPath(){ return realPersistentDataPath; }
 
 
 		private static string _realStreamingAssetsPath;
@@ -60,10 +62,25 @@ namespace ZS.Utils
 			}
 			set { _realStreamingAssetsPath = null; }
 		}
+		public static string GetRealStreamingAssetsPath(){ return realStreamingAssetsPath; }
 
 
 		public static bool currPersistentExist = false;
 
+		private static System.Text.StringBuilder _textSB = new System.Text.StringBuilder(2048);
+		private static System.DateTime _last_time = System.DateTime.Now;
+		private static System.DateTime _begin_time = System.DateTime.Now;
+		public static double DebugCastTime(string tips)
+		{
+			var ds = System.DateTime.Now - _last_time;
+			var all_ds = (System.DateTime.Now - _begin_time).TotalMilliseconds;
+			double cast = ds.TotalSeconds;
+			_last_time = System.DateTime.Now;
+			if(!string.IsNullOrEmpty(tips))
+				Debug.LogFormat("Cast Time \"{0}\" Cast({1}s) runtime({2}ms), frame = {3}", tips, cast, all_ds, Time.frameCount);
+
+			return all_ds;
+		}
 
 		internal static void AnalysePathName(string pathName, out int fileIndex, out int fileLen, out int dotIndex, out int suffixLen)
 		{
@@ -72,6 +89,32 @@ namespace ZS.Utils
 			int firstDotIndex = len;
 			int lastDotIndex = len;
 			int questIndex = len;// the ? position
+
+			int i = len - 1;
+			char cha;
+			while(i >= 0)
+			{
+				cha = pathName[i];
+				if( cha == '/' || cha == '\\')
+				{
+					fileIndex = i + 1;
+					break;
+				}
+				if(cha == '?')
+					questIndex = i;
+				if(cha == '.')
+				{
+					firstDotIndex = i;
+					if(lastDotIndex == len)
+						lastDotIndex = i;
+				}
+				--i;
+			}
+			if( firstDotIndex > questIndex )
+				firstDotIndex = questIndex;
+			dotIndex = lastDotIndex;
+			suffixLen = questIndex - lastDotIndex;
+			fileLen = firstDotIndex - fileIndex;
 		}
 
 		// 从URL中获取assetName
@@ -113,6 +156,27 @@ namespace ZS.Utils
 
 			re = url.Substring(idxBegin,len);
 			return re; 
+		}
+
+		public static string GetBaseName(string assetbundleVariants)
+		{
+			if(string.IsNullOrEmpty(assetbundleVariants))
+				return string.Empty;
+			string baseName = assetbundleVariants;
+			int lastFileIndex,lastDotIndex,fileLen,suffixLen;
+			AnalysePathName(assetbundleVariants, out lastFileIndex, out fileLen, out lastDotIndex, out suffixLen);
+
+			if(suffixLen > 1)
+			{
+				suffixLen = suffixLen - 1;
+				string suffix = assetbundleVariants.Substring(lastDotIndex + 1, suffixLen);
+
+				if(suffix.Equals(Common.ASSETBUNDLE_SUFFIX))
+					baseName = assetbundleVariants.Substring(0, lastFileIndex + fileLen + 4);
+				else
+					baseName = assetbundleVariants.Substring(0, lastFileIndex + lastDotIndex - lastFileIndex);
+			}
+			return baseName;
 		}
 
 		public static string CheckWWWUrl(string url)
@@ -174,6 +238,26 @@ namespace ZS.Utils
 		{
 			string udKey = url;//Md5s base64 string
 			return udKey;
+		}
+
+		//get MD5 or normal filename
+		public static string GetRightFileName(string fileName)
+		{
+			if(string.IsNullOrEmpty(fileName))
+				return string.Empty;
+
+			int lastFileIndex, lastDotIndex, fileLen, suffixLen;
+			AnalysePathName(fileName, out lastFileIndex, out fileLen, out lastDotIndex, out suffixLen);
+
+			string fname = fileName.Substring(lastFileIndex, fileLen);
+			string md5 = string.Empty;
+			md5 = CryptographHelper.Md5String(fname);
+			_textSB.Length = 0;
+			_textSB.Append(fileName);
+			if(fileLen > 0)
+				_textSB.Replace(fname, md5, lastFileIndex, fileLen);
+			fname = _textSB.ToString();
+			return fname;
 		}
 	}
 }

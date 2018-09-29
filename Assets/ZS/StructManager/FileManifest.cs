@@ -75,6 +75,97 @@ namespace ZS.Loader
 		private static readonly int[] EmptyIntArray = new int[0];
 		internal Dictionary<string, ABInfo> abInfoDict = new Dictionary<string, ABInfo>(System.StringComparer.OrdinalIgnoreCase);
 
+		[SLua.DoNotToLuaAttribute]
+		public List<ABInfo> allAbInfo = new List<ABInfo>();
+
+		[SLua.DoNotToLuaAttribute]
+		public string[] allAssetBundlesWithVariant;
+
+		internal Dictionary<string, List<VariantsInfo>> variantDict = new Dictionary<string, List<VariantsInfo>>(System.StringComparer.OrdinalIgnoreCase);
+		public int appNumVersion;
+		public uint crc32 = 0;
+		public bool hasFirstLoad = false;
+
+		public int Count{ get{ return allAbInfo.Count; }}
+
+		[SLua.DoNotToLua]
+		public void OnBeforeSerialize(){}
+
+		[SLua.DoNotToLua]
+		public void OnAfterDeserialize()
+		{
+			if(abInfoDict == null)
+				abInfoDict = new Dictionary<string, ABInfo>(allAbInfo.Count + 32);
+
+			ABInfo abInfo;
+			for(int i = 0; i < allAbInfo.Count; ++i)
+			{
+				abInfo = allAbInfo[i];
+				abInfoDict[abInfo.abName] = abInfo;
+			}
+
+			for(int i = 0; i < allAssetBundlesWithVariant.Length; ++i)
+				AddVariant(allAssetBundlesWithVariant[i]);
+		}
+
+		public string[] GetDirectDependencies(string assetBundleName)
+		{
+			string[] re = EmptyStringArray;
+			var abInfo = GetABInfo(assetBundleName);
+			if(abInfo != null)
+				re = abInfo.dependencies;
+			return re;
+		}
+
+		public List<VariantsInfo> GetVariants(string baseName)
+		{
+			List<VariantsInfo> re = null;
+			variantDict.TryGetValue(baseName, out re);
+			return re;
+		}
+
+		[SLua.DoNotToLuaAttribute]
+		public ABInfo GetABInfo(string abName)
+		{
+			ABInfo abInfo = null;
+			abInfoDict.TryGetValue(abName, out abInfo);
+			return abInfo;
+		}
+
+		[SLua.DoNotToLuaAttribute]
+		public void Add(ABInfo ab)
+		{
+			var abInfo = GetABInfo(ab.abName);
+			int i = -1;
+			if(abInfo != null)
+			{
+				i = allAbInfo.IndexOf(abInfo);
+				if(i >= 0)
+					allAbInfo.RemoveAt(i);
+			}
+			abInfoDict[ab.abName] = ab;
+			if(i >= 0)
+				allAbInfo.Insert(i, ab);
+			else
+				allAbInfo.Add(ab);
+		}
+
+		public void AddVariant(string assetBundlesWithVariant)
+		{
+			var varInfo = new VariantsInfo(assetBundlesWithVariant);
+			if(variantDict.ContainsKey(varInfo.baseName))
+			{
+				var variantList = variantDict[varInfo.baseName];
+				if(!variantList.Contains(varInfo))
+					variantList.Add(varInfo);
+			}else
+			{
+				List<VariantsInfo> variantList = new List<VariantsInfo>();
+				variantList.Add(varInfo);
+				variantDict[varInfo.baseName] = variantList;
+			}
+		}
+
 
 	}
 }

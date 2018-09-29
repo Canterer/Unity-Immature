@@ -62,9 +62,9 @@ namespace ZS.Loader
 
 
     //crc check error
-    public sealed class AssetBundleErrorOperation : AssetBundleLoadOperation
+    public sealed class AssetBundleLoadErrorOperation : AssetBundleLoadOperation
     {
-    	public AssetBundleErrorOperation()
+    	public AssetBundleLoadErrorOperation()
     	{
     		isDone = true;
     		RegisterEvent(_Update, _IsDone);

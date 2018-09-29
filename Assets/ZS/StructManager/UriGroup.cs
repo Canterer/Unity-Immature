@@ -8,6 +8,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 using UnityEngine.Networking;
+using ZS.Utils;
 
 namespace ZS.Loader
 {
@@ -89,12 +90,12 @@ namespace ZS.Loader
 
         internal void OnWWWComplete(CRequest req, byte[] bytes){
             Action<CRequest, Array> act = null;
-            if(onWWWComplete != null && onWWWComplete.TryGetValue(req.index, out act))
+            if(onWWWCompletes != null && onWWWCompletes.TryGetValue(req.index, out act))
                 act(req, bytes);
         }        
         internal void OnWWWComplete(CRequest req, UnityWebRequest www){
             Action<CRequest, Array> act = null;
-            if(onWWWComplete != null && onWWWComplete.TryGetValue(req.index, out act))
+            if(onWWWCompletes != null && onWWWCompletes.TryGetValue(req.index, out act))
                 act(req, www.downloadHandler.data);
         }
 
@@ -105,8 +106,43 @@ namespace ZS.Loader
         }
         public static void CheckWWWComplete(CRequest req, UnityWebRequest www){
             if(req.uris != null)
-                req.uris.onWWWComplete(req, www);
+                req.uris.OnWWWComplete(req, www);
         }
+
+
+        // 检测CRequest index 处的url crc校验，默认返回true
+        public static bool CheckRequestCurrentIndexCrc(CRequest req)
+        {
+            if(req.uris != null)
+                return req.uris.CheckUriCrc(req);
+            else
+                return true;
+        }
+
+        public bool CheckUriCrc(CRequest req)
+        {
+            Func<CRequest, bool> act = null;
+            if(onCrcChecks != null && onCrcChecks.TryGetValue(req.index, out act))
+                return act(req);
+            return true;
+        }
+
+        // 设置CRequest next index处的url
+        public static bool CheckAndSetNextUriGroup(CRequest req)
+        {
+            if(req.uris == null)
+                return false;
+            int count = req.uris.count;
+            int index = req.index + 1;
+            if(count > index && index >= 0)
+            {
+                req.index = index;
+                req.url = string.Empty;
+                return true;
+            }else
+                return false;
+        }
+
 
     }
 }

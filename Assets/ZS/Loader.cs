@@ -8,6 +8,8 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 using SLua;
+using ZS.Utils;
+using ZS.Pool;
 
 namespace ZS.Loader
 {
@@ -154,7 +156,7 @@ namespace ZS.Loader
 			ABDelayUnloadManager.CheckRemove(req.keyHashCode);
 			if(LoadAssetFromCache(req))
 			{
-				DispathReqAssetOperation(req, false);
+				DispatchReqAssetOperation(req, false);
 				return;
 			}
 
@@ -162,7 +164,7 @@ namespace ZS.Loader
 
 			AssetBundleLoadOperation abDownloadOperation = null;
 			// check is loading
-			if( downloadingBundles.TryGetVale(req.key, out abDownloadOperation)){
+			if( downloadingBundles.TryGetValue(req.key, out abDownloadOperation)){
 
 			}else if( CheckAssetBundleCanLoad(req)){// need load
 				//load dependencies and refrenece count
@@ -221,8 +223,8 @@ namespace ZS.Loader
 		static protected int[] LoadDependencies(CRequest req, CRequest parent)
 		{
 			string[] deps = ManifestManager.fileManifest.GetDirectDependencies(req.assetBundleName);
-			if( deps.length == 0 ) return nil;
-			string abName = string.Empth;
+			if( deps.Length == 0 ) return null;
+			string abName = string.Empty;
 			if (parent != null)
 				abName = CUtils.GetBaseName(parent.assetBundleName);
 
@@ -231,7 +233,7 @@ namespace ZS.Loader
 			CRequest item;
 			int[] hashs = new int[deps.Length];
 			int keyHash;
-			for(int i = 0; i < deps.length; ++i)
+			for(int i = 0; i < deps.Length; ++i)
 			{
 				depAbName = CUtils.GetBaseName(deps[i]);
 				if( abName == depAbName)
@@ -284,5 +286,70 @@ namespace ZS.Loader
 			req.ReleaseToPool();
 		}
 		
+
+		// real load assetbundle
+		static protected AssetBundleLoadOperation LoadAssetBundleInternal(CRequest req)
+		{
+			AssetBundleLoadOperation abDownloadOp = null;
+			if(!downloadingBundles.TryGetValue(req.key, out abDownloadOp))
+			{
+				if(!UriGroup.CheckRequestCurrentIndexCrc(req))
+				{
+					abDownloadOp = new AssetBundleLoadErrorOperation();
+					abDownloadOp.error = string.Format("assetbundle({0}) crc check wrong", req.key);
+				}
+				else if(req.url.StartsWith(Common.HTTP_STRING)) // load assetbundle
+					abDownloadOp = AssetBundleLoadFromWebOperation.Get();
+				else
+					abDownloadOp = AssetBundleLoadFromDiskOperation.Get();
+
+				abDownloadOp.SetRequest(req);
+				downloadingBundles.Add(req.key, abDownloadOp);
+				CacheData cached = null;
+				CacheManager.CreateOrGetCache(req.keyHashCode, out cached);// cache data
+				// load now
+				if( bundleMax - inProgressOperations.Count > 0)
+				{
+					inProgressOperations.Add(abDownloadOp);
+					abDownloadOp.BeginDownload();
+				}
+				else
+				{
+					bundleQueue.Enqueue(abDownloadOp);
+				}
+			}
+			else if(req.isShared)
+				req.ReleaseToPool();
+
+			return abDownloadOp;
+		}
+
+		// check the assetbundle is loaded
+		static protected bool CheckAssetBundleCanLoad(CRequest req)
+		{
+			return CacheManager.GetCache(req.keyHashCode) == null;
+		}
+
+		// append request to assetCallBackList
+		static protected bool AddAssetBundleLoadAssetOperationToCallBackList(AssetBundleLoadAssetOperation operation)
+		{
+			bool isLoading = false;
+			var req = operation.cRequest;
+			string key = req.udAssetKey;
+			List<CRequest> list = null;
+			if(assetCallBackList.TryGetValue(key, out list))//回调列表
+			{
+				list.Add(req);
+				isLoading = true;
+				operation.ReleaseToPool();
+			}
+			else{
+				list = ListPool<CRequest>.Get();
+				assetCallBackList.Add(key, list);
+				list.Add(req);
+			}
+
+			return isLoading;
+		}
 	}
 }
